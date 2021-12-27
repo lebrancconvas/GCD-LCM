@@ -1,9 +1,9 @@
 import React from 'react'; 
 
-const ResultPopup = () => {
+const Navbar = () => {
 	return (
 		<div></div>
 	)
 }
 
-export default ResultPopup; 
+export default Navbar; 
