@@ -22,21 +22,21 @@ const App = () => {
     }
     return (
         <div>
-            <Box sx={{textAlign: 'center'}}> 
+            <Box sx={{textAlign: 'center'}} mt={30}>  
                 <Box>
-                    <Typography variant="h3"> 
-                        GCD and LCM 
+                    <Typography variant="h1">  
+                        GCD and LCM Calculator  
                     </Typography>
                 </Box>
-                <form>
+                <form onSubmit={calculating}> 
                     <Box mt={3}> 
-                        <TextField sx={{width: 500}} type="number" placeholder="Insert First Number" onChange={event => setNumber1(event.target.value)} /> 
+                        <TextField sx={{width: 500}} type="number" placeholder="Insert First Number" onChange={event => setNumber1(event.target.value)} required/> 
                     </Box>
                     <Box mt={2}> 
-                        <TextField sx={{width: 500}} type="number" placeholder="Insert Second Number" onChange={event => setNumber2(event.target.value)} />   
+                        <TextField sx={{width: 500}} type="number" placeholder="Insert Second Number" onChange={event => setNumber2(event.target.value)} required/>    
                     </Box>
                     <Box mt={2}> 
-                        <Button variant="contained" onClick={calculating}>  
+                        <Button variant="contained" type="submit">  
                             Calculate 
                         </Button>
                     </Box>
